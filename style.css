@@ -20,13 +20,18 @@
 html, body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
   overflow-x: clip; /* clip preserves sticky positioning better than hidden */
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, .font-display {
-  font-family: 'Orbitron', sans-serif;
+h1, h2, h3, h4, .font-display, .navbar, .nav-links a {
+  font-family: 'Syncopate', sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.2em;
 }
 
 body.loading {
@@ -298,17 +303,14 @@ body.loading {
 }
 
 .hero-overlay-title {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Syncopate', sans-serif;
   font-size: 5rem;
-  font-weight: 900;
-  letter-spacing: 0.12em;
+  font-weight: 800;
+  letter-spacing: 0.2em;
   color: #FFFFFF;
   text-shadow: 
-    0 0 10px #000000,
-    0 0 20px #000000,
-    0 0 35px #000000,
-    0 0 50px rgba(138, 43, 226, 0.65),
-    0 0 85px rgba(138, 43, 226, 0.35);
+    0 0 10px rgba(138, 46, 226, 0.4),
+    0 0 30px rgba(138, 46, 226, 0.2);
   margin-bottom: 1.5rem;
   line-height: 1.1;
 }
@@ -320,7 +322,7 @@ body.loading {
 }
 
 .subline-upper {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 1.8rem;
   font-weight: 800;
   font-style: italic;
@@ -333,7 +335,7 @@ body.loading {
 }
 
 .subline-lower {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Syncopate', sans-serif;
   font-size: 0.95rem;
   font-weight: 400;
   color: #A0A0A5;
@@ -377,10 +379,10 @@ body.loading {
 }
 
 .nav-logo {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Syncopate', sans-serif;
   font-size: 1.3rem;
-  font-weight: 900;
-  letter-spacing: 0.15em;
+  font-weight: 800;
+  letter-spacing: 0.2em;
   color: #FFFFFF;
   text-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
   text-decoration: none;
@@ -398,10 +400,10 @@ body.loading {
 }
 
 .nav-link-item a {
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Syncopate', sans-serif;
   font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-weight: 800;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
@@ -452,4 +454,9 @@ body.loading {
     gap: 1.2rem;
     justify-content: center;
   }
+}
+
+/* Base descriptions and list item details */
+p, li {
+  color: rgba(255, 255, 255, 0.75);
 }
