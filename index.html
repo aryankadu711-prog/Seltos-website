@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Kia Seltos 2026 - Launch</title>
+  <!-- SEO & Fonts -->
+  <meta name="description" content="Experience the premium, 3D scroll-animated landing page of the Kia Seltos 2026. Futuristic design, advanced ADAS, and Smartstream performance.">
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&amp;family=Orbitron:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  
+  <script>
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                colors: {
+                    primary: "#8A2BE2",
+                    "accent-cyan": "#00FFFF",
+                    "background-dark": "#0B0B0C",
+                    "surface-dark": "#16161A",
+                },
+                fontFamily: {
+                    display: ["Orbitron", "sans-serif"],
+                    body: ["Montserrat", "sans-serif"],
+                },
+                borderRadius: {
+                    DEFAULT: "0.5rem",
+                    'xl': '1rem',
+                    '2xl': '1.5rem',
+                },
+                backgroundImage: {
+                    'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                }
+            },
+        },
+    };
+  </script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="antialiased selection:bg-primary selection:text-white loading">
+  <div class="shader-bg"></div>
+
+  <!-- Navigation Header -->
+  <nav class="navbar">
+    <a href="#hero-animation-section" class="nav-logo">KIA SELTOS</a>
+    <ul class="nav-links">
+      <li class="nav-link-item"><a href="#hero-animation-section">Overview</a></li>
+      <li class="nav-link-item"><a href="#core-specs-section">Specifications</a></li>
+      <li class="nav-link-item"><a href="#carwale-metrics-section">Performance</a></li>
+      <li class="nav-link-item"><a href="#engine-dive-section">Powertrain</a></li>
+      <li class="nav-link-item"><a href="#adas-matrix-section">Safety</a></li>
+    </ul>
+  </nav>
+
+  <!-- Fullscreen Preloader -->
+  <div id="preloader">
+    <div class="loader-content">
+      <h1 class="loader-title">KIA SELTOS 2026</h1>
+      <p class="loader-subtitle">Configuring 3D Cinematic Sequence...</p>
+      <div class="progress-bar-container">
+        <div id="loader-progress"></div>
+      </div>
+      <div id="loader-percentage">0%</div>
+    </div>
+  </div>
+
+  <!-- Scroll Prompt (fades out as user scrolls) -->
+  <div id="scroll-prompt" class="scroll-prompt">
+    <span class="mouse-icon"><span class="mouse-wheel"></span></span>
+    <span class="scroll-prompt-text">SCROLL TO ROTATE 3D MODEL</span>
+  </div>
+
+  <!-- SECTION 1: 3D SCROLL SEQUENCE -->
+  <div class="scroll-container" id="hero-animation-section">
+    <!-- Canvas Wrapper (Sticky viewport container) -->
+    <div class="canvas-wrapper">
+      <canvas id="car-canvas"></canvas>
+      <div class="canvas-ambient-glow"></div>
+      
+      <!-- Visibility Shield (Vignette behind text) -->
+      <div id="text-visibility-shield" class="text-visibility-shield"></div>
+      
+      <!-- Typographic Entry Sequence Overlay -->
+      <div id="hero-text-overlay" class="hero-text-overlay">
+        <h1 class="hero-overlay-title">KIA SELTOS</h1>
+        <div class="hero-overlay-subtitle-stack">
+          <p class="subline-upper">Badass by design.</p>
+          <p class="subline-lower">Movement that inspires.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT BLOCKS APPENDED BELOW -->
+  <main class="relative z-10 bg-background-dark">
+    
+    <!-- Specs Section -->
+    <section class="py-24 relative z-10 px-6 lg:px-12 fade-in-section" id="core-specs-section">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-16">
+          <h2 class="text-3xl md:text-5xl font-display font-bold mb-4"><span class="text-primary">CORE</span> ARCHITECTURE</h2>
+          <div class="w-24 h-1 bg-gradient-to-r from-primary to-accent-cyan"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="hover-card bg-surface-dark/50 backdrop-blur-md p-8 rounded-2xl flex flex-col items-start justify-between h-full group">
+            <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-6 group-hover:bg-primary/40 transition-colors">
+              <span class="material-icons text-primary text-2xl group-hover:scale-110 transition-transform">settings</span>
+            </div>
+            <div>
+              <p class="text-gray-400 text-sm tracking-widest uppercase mb-2">Engine</p>
+              <h3 class="text-xl font-bold font-display text-white group-hover:text-accent-cyan transition-colors">1482-1497 cc</h3>
+              <p class="text-sm text-gray-500 mt-1">Smartstream G1.5</p>
+            </div>
+          </div>
+          <div class="hover-card bg-surface-dark/50 backdrop-blur-md p-8 rounded-2xl flex flex-col items-start justify-between h-full group">
+            <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-6 group-hover:bg-primary/40 transition-colors">
+              <span class="material-icons text-primary text-2xl group-hover:scale-110 transition-transform">security</span>
+            </div>
+            <div>
+              <p class="text-gray-400 text-sm tracking-widest uppercase mb-2">Safety</p>
+              <h3 class="text-xl font-bold font-display text-white group-hover:text-accent-cyan transition-colors">5 Star Certified</h3>
+              <p class="text-sm text-gray-500 mt-1">Bharat NCAP</p>
+            </div>
+          </div>
+          <div class="hover-card bg-surface-dark/50 backdrop-blur-md p-8 rounded-2xl flex flex-col items-start justify-between h-full group">
+            <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-6 group-hover:bg-primary/40 transition-colors">
+              <span class="material-icons text-primary text-2xl group-hover:scale-110 transition-transform">local_gas_station</span>
+            </div>
+            <div>
+              <p class="text-gray-400 text-sm tracking-widest uppercase mb-2">Fuel</p>
+              <h3 class="text-xl font-bold font-display text-white group-hover:text-accent-cyan transition-colors">Petrol &amp; Diesel</h3>
+              <p class="text-sm text-gray-500 mt-1">E20 Compliant</p>
+            </div>
+          </div>
+          <div class="hover-card bg-surface-dark/50 backdrop-blur-md p-8 rounded-2xl flex flex-col items-start justify-between h-full group">
+            <div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center mb-6 group-hover:bg-primary/40 transition-colors">
+              <span class="material-icons text-primary text-2xl group-hover:scale-110 transition-transform">swap_calls</span>
+            </div>
+            <div>
+              <p class="text-gray-400 text-sm tracking-widest uppercase mb-2">Transmission</p>
+              <h3 class="text-xl font-bold font-display text-white group-hover:text-accent-cyan transition-colors">Multiple Options</h3>
+              <p class="text-sm text-gray-500 mt-1">6MT, iMT, CVT, TC, 7DCT</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Performance Section -->
+    <section class="py-24 relative z-10 px-6 lg:px-12 bg-surface-dark/30 fade-in-section border-y border-white/5" id="carwale-metrics-section">
+      <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-16 items-center">
+        <div class="lg:w-1/3">
+          <h2 class="text-3xl md:text-5xl font-display font-bold mb-4 leading-tight">EXPERT <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-cyan to-primary">EVALUATION</span></h2>
+          <p class="text-gray-400 leading-relaxed mb-8">Rigorously tested across challenging terrains. The numbers speak for themselves, delivering an uncompromising blend of comfort, style, and raw capability.</p>
+          <div class="bg-gradient-to-br from-primary/20 to-transparent p-6 rounded-2xl border border-primary/30 inline-block">
+            <p class="text-sm text-gray-400 uppercase tracking-wider mb-1">Overall Verdict</p>
+            <div class="text-5xl font-display font-black text-white flex items-end gap-2">
+              8.5 <span class="text-2xl text-gray-500 font-bold">/ 10</span>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-2/3 w-full space-y-8">
+          <div class="group">
+            <div class="flex justify-between text-sm font-bold tracking-wider mb-2">
+              <span class="text-gray-300 uppercase">Interior &amp; Features</span>
+              <span class="text-accent-cyan font-display">9 / 10</span>
+            </div>
+            <div class="h-2 w-full bg-background-dark rounded-full overflow-hidden border border-white/5">
+              <div class="h-full bg-gradient-to-r from-primary to-accent-cyan progress-bar-fill shadow-[0_0_10px_#8A2BE2]" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="group">
+            <div class="flex justify-between text-sm font-bold tracking-wider mb-2">
+              <span class="text-gray-300 uppercase">Exterior Design</span>
+              <span class="text-accent-cyan font-display">8 / 10</span>
+            </div>
+            <div class="h-2 w-full bg-background-dark rounded-full overflow-hidden border border-white/5">
+              <div class="h-full bg-gradient-to-r from-primary to-accent-cyan progress-bar-fill shadow-[0_0_10px_#8A2BE2]" style="width: 80%;"></div>
+            </div>
+          </div>
+          <div class="group">
+            <div class="flex justify-between text-sm font-bold tracking-wider mb-2">
+              <span class="text-gray-300 uppercase">Drive Experience</span>
+              <span class="text-accent-cyan font-display">8 / 10</span>
+            </div>
+            <div class="h-2 w-full bg-background-dark rounded-full overflow-hidden border border-white/5">
+              <div class="h-full bg-gradient-to-r from-primary to-accent-cyan progress-bar-fill shadow-[0_0_10px_#8A2BE2]" style="width: 80%;"></div>
+            </div>
+          </div>
+          <div class="group">
+            <div class="flex justify-between text-sm font-bold tracking-wider mb-2">
+              <span class="text-gray-300 uppercase">Ride Quality</span>
+              <span class="text-accent-cyan font-display">7.5 / 10</span>
+            </div>
+            <div class="h-2 w-full bg-background-dark rounded-full overflow-hidden border border-white/5">
+              <div class="h-full bg-gradient-to-r from-primary to-accent-cyan progress-bar-fill shadow-[0_0_10px_#8A2BE2]" style="width: 75%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engine Section -->
+    <section class="py-24 relative z-10 px-6 lg:px-12 fade-in-section" id="engine-dive-section">
+      <div class="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 items-center">
+        <div class="lg:w-1/2 order-2 lg:order-1 space-y-10">
+          <div>
+            <h2 class="text-3xl md:text-5xl font-display font-bold mb-4">POWER <span class="text-primary">DYNAMICS</span></h2>
+            <p class="text-gray-400">Precision engineering meets raw power. The Smartstream G1.5 engine is tuned for optimal efficiency without compromising on thrilling acceleration.</p>
+          </div>
+          <div class="space-y-6 border-l-2 border-primary/30 pl-6 py-2">
+            <div>
+              <p class="text-xs text-gray-500 uppercase tracking-widest mb-1">Configuration</p>
+              <p class="text-xl font-display text-white">1497 cc, 4 Cylinders, 4 Valves/Cyl</p>
+            </div>
+            <div>
+              <p class="text-xs text-gray-500 uppercase tracking-widest mb-1">Max Power</p>
+              <p class="text-xl font-display text-white">113 bhp <span class="text-accent-cyan text-sm">@ 6300 rpm</span></p>
+            </div>
+            <div>
+              <p class="text-xs text-gray-500 uppercase tracking-widest mb-1">Max Torque</p>
+              <p class="text-xl font-display text-white">144 Nm <span class="text-accent-cyan text-sm">@ 4500 rpm</span></p>
+            </div>
+            <div>
+              <p class="text-xs text-gray-500 uppercase tracking-widest mb-1">Drive &amp; Terrain Modes</p>
+              <div class="flex flex-wrap gap-2 mt-2">
+                <span class="px-3 py-1 bg-surface-dark border border-white/10 rounded-full text-xs text-gray-300">Eco</span>
+                <span class="px-3 py-1 bg-surface-dark border border-white/10 rounded-full text-xs text-gray-300">Normal</span>
+                <span class="px-3 py-1 bg-surface-dark border border-primary/50 rounded-full text-xs text-primary shadow-[0_0_10px_rgba(138,43,226,0.2)]">Sport</span>
+                <span class="mx-2 text-gray-600">|</span>
+                <span class="px-3 py-1 bg-surface-dark border border-white/10 rounded-full text-xs text-gray-300">Sand</span>
+                <span class="px-3 py-1 bg-surface-dark border border-white/10 rounded-full text-xs text-gray-300">Mud</span>
+                <span class="px-3 py-1 bg-surface-dark border border-white/10 rounded-full text-xs text-gray-300">Snow</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:w-1/2 order-1 lg:order-2 relative aspect-square w-full max-w-md mx-auto">
+          <div class="absolute inset-0 rounded-full border border-primary/20 animate-[spin_20s_linear_infinite]"></div>
+          <div class="absolute inset-4 rounded-full border border-accent-cyan/20 border-dashed animate-[spin_15s_linear_infinite_reverse]"></div>
+          <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-tr from-surface-dark to-background-dark rounded-full shadow-[inset_0_0_50px_rgba(138,43,226,0.1)]">
+            <span class="material-icons text-6xl text-primary/40">engineering</span>
+            <p class="absolute bottom-1/4 text-xs font-display text-accent-cyan/50 tracking-widest uppercase">Engine X-Ray Render</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADAS Section -->
+    <section class="py-24 relative z-10 px-6 lg:px-12 bg-surface-dark/20 fade-in-section" id="adas-matrix-section">
+      <div class="max-w-7xl mx-auto text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-display font-bold mb-4">ADAS <span class="text-accent-cyan">LEVEL 2</span></h2>
+        <p class="text-gray-400 max-w-2xl mx-auto">Advanced Driver Assistance Systems designed to anticipate the unexpected. Protecting you with a 360-degree shield of sensory technology.</p>
+      </div>
+      <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6">
+        <div class="flex items-center gap-4 bg-background-dark/50 p-4 rounded-xl border border-white/5 hover:border-primary/30 transition-colors group">
+          <span class="material-icons text-primary shadow-[0_0_10px_rgba(138,43,226,0.5)] bg-primary/10 rounded-full p-1 group-hover:bg-primary group-hover:text-white transition-all">check</span>
+          <span class="text-sm font-semibold tracking-wide">Forward Collision Warning</span>
+        </div>
+        <div class="flex items-center gap-4 bg-background-dark/50 p-4 rounded-xl border border-white/5 hover:border-primary/30 transition-colors group">
+          <span class="material-icons text-primary shadow-[0_0_10px_rgba(138,43,226,0.5)] bg-primary/10 rounded-full p-1 group-hover:bg-primary group-hover:text-white transition-all">check</span>
+          <span class="text-sm font-semibold tracking-wide">Drowsiness Detection</span>
+        </div>
+        <div class="flex items-center gap-4 bg-background-dark/50 p-4 rounded-xl border border-white/5 hover:border-primary/30 transition-colors group">
+          <span class="material-icons text-primary shadow-[0_0_10px_rgba(138,43,226,0.5)] bg-primary/10 rounded-full p-1 group-hover:bg-primary group-hover:text-white transition-all">check</span>
+          <span class="text-sm font-semibold tracking-wide">Lane Departure Prevention</span>
+        </div>
+        <div class="flex items-center gap-4 bg-background-dark/50 p-4 rounded-xl border border-white/5 hover:border-primary/30 transition-colors group">
+          <span class="material-icons text-primary shadow-[0_0_10px_rgba(138,43,226,0.5)] bg-primary/10 rounded-full p-1 group-hover:bg-primary group-hover:text-white transition-all">check</span>
+          <span class="text-sm font-semibold tracking-wide">Blind Spot Monitor</span>
+        </div>
+        <div class="flex items-center gap-4 bg-background-dark/50 p-4 rounded-xl border border-white/5 hover:border-primary/30 transition-colors group">
+          <span class="material-icons text-primary shadow-[0_0_10px_rgba(138,43,226,0.5)] bg-primary/10 rounded-full p-1 group-hover:bg-primary group-hover:text-white transition-all">check</span>
+          <span class="text-sm font-semibold tracking-wide">Safe Exit Warning</span>
+        </div>
+        <div class="flex items-center gap-4 bg-background-dark/50 p-4 rounded-xl border border-white/5 hover:border-primary/30 transition-colors group">
+          <span class="material-icons text-primary shadow-[0_0_10px_rgba(138,43,226,0.5)] bg-primary/10 rounded-full p-1 group-hover:bg-primary group-hover:text-white transition-all">check</span>
+          <span class="text-sm font-semibold tracking-wide">Tire Pressure Monitor (TPMS)</span>
+        </div>
+        <div class="flex items-center gap-4 bg-background-dark/50 p-4 rounded-xl border border-white/5 hover:border-primary/30 transition-colors group md:col-span-2 lg:col-span-3 justify-center lg:justify-start lg:w-fit lg:mx-auto">
+          <span class="material-icons text-primary shadow-[0_0_10px_rgba(138,43,226,0.5)] bg-primary/10 rounded-full p-1 group-hover:bg-primary group-hover:text-white transition-all">check</span>
+          <span class="text-sm font-semibold tracking-wide">Emergency Brake Flashing</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-12 px-6 text-center relative z-10 bg-background-dark">
+      <h3 class="font-display font-bold text-2xl text-white mb-4">KIA SELTOS 2026</h3>
+      <p class="text-gray-600 text-sm mb-8">Movement That Inspires.</p>
+      <div class="flex justify-center gap-6 text-gray-500 text-xs uppercase tracking-widest">
+        <a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+        <a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+        <a class="hover:text-white transition-colors" href="#">Contact</a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>

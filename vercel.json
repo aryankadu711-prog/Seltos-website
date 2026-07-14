@@ -1,0 +1,13 @@
+{
+  "headers": [
+    {
+      "source": "/ezgif-8c79d97518f51df0-jpg/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
